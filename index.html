@@ -3,217 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>green juice TV — a production-first creative unit shaping stories through visuals, edits & cultural recall</title>
-    <meta name="description" content="We work across production, post-production & content systems, so your brand’s story is seen, felt & remembered.">
-    
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://greenjuicetv.com/">
-    <meta property="og:title" content="Green Juice TV — Production-First Culture Studio">
-    <meta property="og:description" content="Shaping stories through visuals, edits & cultural recall">
-    <meta property="og:image" content="https://greenjuicetv.com/assets/images/og-image.jpg">
-
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://greenjuicetv.com/">
-    <meta property="twitter:title" content="Green Juice TV — Production-First Culture Studio">
-    <meta property="twitter:description" content="Shaping stories through visuals, edits & cultural recall">
-    <meta property="twitter:image" content="https://greenjuicetv.com/assets/images/og-image.jpg">
-
+    <title>Green Juice TV — A Global Culture Studio for Internet-Native Brands</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
 </head>
 <body>
-    <!-- Loading Screen -->
-    <div id="loading-screen">
-        <div class="loading-content">
-            <div class="loading-text">Loading</div>
-            <div class="loading-dots">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
+    <div class="loading-screen" id="loading-screen">
+        <div class="loading-text">Loading</div>
     </div>
 
-    <!-- Main Content -->
-    <main id="main-content" style="display: none;">
-        <!-- Navigation -->
-        <nav class="navbar">
-            <div class="nav-container">
-                <div class="logo">
-                    <img src="assets/images/gjtv-logo.svg" alt="Green Juice TV" class="logo-img">
-                    <span class="logo-text">GJTV</span>
-                </div>
-                <div class="nav-links">
-                    <a href="#about">About</a>
-                    <a href="#services">Services</a>
-                    <a href="#trusted">Trusted By</a>
-                    <a href="#contact">Reach Out</a>
-                </div>
-                <div class="mobile-menu-toggle">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
+    <div class="main-container" id="main-content" style="display: none;">
+        <!-- Time Display Section -->
+        <div class="time-section">
+            <div class="time-item">
+                <span class="city">New York:</span>
+                <span class="time" id="ny-time">11:08:36 PM</span>
             </div>
+            <div class="time-item">
+                <span class="city">Dubai:</span>
+                <span class="time" id="dubai-time">07:08:36 AM</span>
+            </div>
+            <div class="time-item">
+                <span class="city">London:</span>
+                <span class="time" id="london-time">04:08:36 AM</span>
+            </div>
+        </div>
+
+        <!-- Navigation Menu -->
+        <nav class="navigation">
+            <a href="#about" class="nav-link">About</a>
+            <a href="#calendar" class="nav-link">Calendar</a>
+            <a href="#trusted" class="nav-link">Trusted By</a>
+            <a href="#contact" class="nav-link">Reachout</a>
         </nav>
 
-        <!-- Hero Section -->
-        <section class="hero">
-            <div class="hero-content">
-                <h1>Green Juice TV</h1>
-                <p class="hero-subtitle">A Production-First Culture Studios</p>
-                <div class="hero-description">
-                    <p>We are a production-first creative unit shaping stories through visuals, edits & cultural recall.</p>
-                </div>
-            </div>
-            <div class="scroll-indicator">
-                <div class="scroll-arrow"></div>
-            </div>
-        </section>
+        <!-- Main Content Area -->
+        <main class="content-area">
+            <section id="about" class="content-section">
+                <h2>About</h2>
+                <p>Green Juice TV is a global culture studio for internet-native brands.</p>
+            </section>
 
-        <!-- Time Zone Section -->
-        <section class="timezone">
-            <div class="time-display">
-                <div class="time-item">
-                    <span class="city">New York:</span>
-                    <span class="time" id="ny-time"></span>
-                </div>
-                <div class="time-item">
-                    <span class="city">Mumbai:</span>
-                    <span class="time" id="mumbai-time"></span>
-                </div>
-                <div class="time-item">
-                    <span class="city">London:</span>
-                    <span class="time" id="london-time"></span>
-                </div>
-                <div class="time-item">
-                    <span class="city">Tokyo:</span>
-                    <span class="time" id="tokyo-time"></span>
-                </div>
-            </div>
-        </section>
+            <section id="calendar" class="content-section">
+                <h2>Calendar</h2>
+                <p>Our upcoming projects and availability.</p>
+            </section>
 
-        <!-- About Section -->
-        <section id="about" class="section about-section">
-            <div class="container">
-                <h2>About Green Juice TV</h2>
-                <div class="about-content">
-                    <p class="about-lead">we are a production-first creative unit shaping stories through visuals, edits & cultural recall. we work across production, post-production & content systems, so your brand’s story is seen, felt & remembered. ps: we can be your brand’s much-needed cinematic upgrade.</p>
-                    <div class="about-grid">
-                        <div class="about-item">
-                            <h3>Culture First</h3>
-                            <p>We don't just follow trends—we understand the cultural currents that create them.</p>
-                        </div>
-                        <div class="about-item">
-                            <h3>Global Perspective</h3>
-                            <p>With teams across continents, we bring diverse viewpoints to every project.</p>
-                        </div>
-                        <div class="about-item">
-                            <h3>Digital Native</h3>
-                            <p>Born online, optimized for platforms, designed for engagement.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Services Section -->
-        <section id="services" class="section services-section">
-            <div class="container">
-                <h2>What We Do</h2>
-                <div class="services-grid">
-                    <div class="service-item">
-                        <h3>Production</h3>
-                        <p>brand films, ads, digital campaigns, social-first videos</p>
-                    </div>
-                    <div class="service-item">
-                        <h3>Post-Production</h3>
-                        <p>editing, sound, grading, motion design</p>
-                    </div>
-                    <div class="service-item">
-                        <h3>Cultural Assets</h3>
-                        <p>short-form, snackable edits, reels, trailers</p>
-                    </div>
-                    <div class="service-item">
-                        <h3>Creative Direction</h3>
-                        <p>scripting, storyboarding, moodboarding</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Trusted By Section -->
-        <section id="trusted" class="section trusted-section">
-            <div class="container">
+            <section id="trusted" class="content-section trusted-section">
                 <h2>Trusted By</h2>
-                <div class="trusted-logos">
-                    <div class="logo-item">
-                        <img src="assets/images/client-1.png" alt="Client 1">
-                    </div>
-                    <div class="logo-item">
-                        <img src="assets/images/client-2.png" alt="Client 2">
-                    </div>
-                    <div class="logo-item">
-                        <img src="assets/images/client-3.png" alt="Client 3">
-                    </div>
-                    <div class="logo-item">
-                        <img src="assets/images/client-4.png" alt="Client 4">
-                    </div>
-                    <div class="logo-item">
-                        <img src="assets/images/client-5.png" alt="Client 5">
-                    </div>
-                    <div class="logo-item">
-                        <img src="assets/images/client-6.png" alt="Client 6">
-                    </div>
+                <div class="trusted-brands">
+                    <!-- Brand logos would go here -->
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- Contact Section -->
-        <section id="contact" class="section contact-section">
-            <div class="container">
-                <h2>Reach Out</h2>
-                <div class="contact-content">
-                    <p>Ready to build something extraordinary together?</p>
-                    <div class="contact-methods">
-                        <a href="mailto:hello@greenjuicetv.com" class="contact-link">
-                            <span class="contact-label">Email</span>
-                            <span class="contact-value">hello@greenjuicetv.com</span>
-                        </a>
-                        <div class="contact-link">
-                            <span class="contact-label">Phone</span>
-                            <span class="contact-value">+91 9022338877</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+            <section id="contact" class="content-section">
+                <h2>Reachout</h2>
+                <p>Get in touch with our team.</p>
+            </section>
+        </main>
+
+        <!-- Bottom Navigation (Mobile/Secondary) -->
+        <nav class="bottom-navigation">
+            <a href="#trusted" class="nav-link">Trusted By</a>
+            <a href="#contact" class="nav-link">Reachout</a>
+        </nav>
 
         <!-- Footer -->
         <footer class="footer">
-            <div class="container">
-                <div class="footer-content">
-                    <div class="footer-logo">
-                        <span class="logo-text">GJTV</span>
-                    </div>
-                    <div class="footer-links">
-                        <a href="#about">About</a>
-                        <a href="#services">Services</a>
-                        <a href="#trusted">Trusted By</a>
-                        <a href="#contact">Reach Out</a>
-                    </div>
-                </div>
-                <div class="footer-bottom">
-                    <p>&copy; 2025 Green Juice TV. All Rights Reserved.</p>
-                </div>
-            </div>
+            <p>© Green Juice TV. All Rights Reserved.</p>
         </footer>
-    </main>
+    </div>
 
     <script src="script.js"></script>
 </body>
