@@ -1,78 +1,221 @@
-<!DOCTYPE html>
+
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Green Juice TV — A Global Culture Studio for Internet-Native Brands</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="loading-screen" id="loading-screen">
-        <div class="loading-text">Loading</div>
-    </div>
-
-    <div class="main-container" id="main-content" style="display: none;">
-        <!-- Time Display Section -->
-        <div class="time-section">
-            <div class="time-item">
-                <span class="city">New York:</span>
-                <span class="time" id="ny-time">11:08:36 PM</span>
-            </div>
-            <div class="time-item">
-                <span class="city">Dubai:</span>
-                <span class="time" id="dubai-time">07:08:36 AM</span>
-            </div>
-            <div class="time-item">
-                <span class="city">London:</span>
-                <span class="time" id="london-time">04:08:36 AM</span>
-            </div>
+    <head>
+        <meta charSet="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="preload" href="/_next/static/media/111c93f1bc244164-s.p.woff2" as="font" crossorigin="" type="font/woff2"/>
+        <link rel="preload" href="/_next/static/media/54d279905dfc6637-s.p.woff2" as="font" crossorigin="" type="font/woff2"/>
+        <link rel="preload" href="/_next/static/media/828e2958d60bafae-s.p.woff2" as="font" crossorigin="" type="font/woff2"/>
+        <link rel="preload" href="/_next/static/media/86a4519c88efbac0-s.p.woff2" as="font" crossorigin="" type="font/woff2"/>
+        <link rel="stylesheet" href="/_next/static/css/bf7763f2a5c67a5f.css" data-precedence="next"/>
+        <link rel="stylesheet" href="/_next/static/css/943b0df47baf6dc4.css" data-precedence="next"/>
+        <link rel="preload" as="script" fetchPriority="low" href="/_next/static/chunks/webpack-adc7a06680af252a.js"/>
+        <script src="/_next/static/chunks/4bd1b696-299743f5624cdabe.js" async=""></script>
+        <script src="/_next/static/chunks/684-2db1d94d3e67dc70.js" async=""></script>
+        <script src="/_next/static/chunks/main-app-bdff1c82851a68ad.js" async=""></script>
+        <script src="/_next/static/chunks/799-1e1e6c73fb2f259d.js" async=""></script>
+        <script src="/_next/static/chunks/app/layout-956eba540a3db1f4.js" async=""></script>
+        <script src="/_next/static/chunks/53c13509-48ecd9d0106e1ac5.js" async=""></script>
+        <script src="/_next/static/chunks/ee560e2c-0c91b6c77fc1cda8.js" async=""></script>
+        <script src="/_next/static/chunks/992-0f3d050cfe4f1eef.js" async=""></script>
+        <script src="/_next/static/chunks/583-7c202f764f5e2223.js" async=""></script>
+        <script src="/_next/static/chunks/313-ce3ca5c7b3571c52.js" async=""></script>
+        <script src="/_next/static/chunks/app/page-5a3cbde735273467.js" async=""></script>
+        <meta name="next-size-adjust" content=""/>
+        <title>Fork Off — A Global Culture Studio for Internet-Native Brands</title>
+        <meta name="description" content="We help Web3 brands earn mindshare, retail , crack geo-specific markets, and build cultural IP through unforgettable experiences. Based in Dubai, forked worldwide."/>
+        <meta name="keywords" content="Web3 marketing,Culture studio,Crypto PR,KOL campaigns,Guerrilla marketing,Brand strategy,Event production,Retail marketing,Web3 cultural marketing,Dubai Web3 agency,Crypto influencer campaigns,Geo-specific GTM Web3,IRL Web3 experiences,Web3 culture-led marketing studio,Guerrilla marketing for crypto brands,KOL-driven narrative campaigns for Web3,Web3 GTM strategy for exchanges,Launch crypto brand in Asia,Fork Off Web3,Fork Off agency,Unpaid Founder agency,Fork Off culture studio,Hire crypto marketing agency,How to launch a crypto brand globally,Book Web3 event agency,What is a Web3 culture studio?,Crypto marketing agency Dubai,Web3 GTM Japan,Crypto branding in Korea,LATAM Web3 agency"/>
+        <meta name="robots" content="index, follow"/>
+        <meta name="googlebot" content="index, follow"/>
+        <meta property="og:title" content="Fork Off — A Global Culture Studio for Internet-Native Brands"/>
+        <meta property="og:description" content="We help Web3 brands earn mindshare, retail , crack geo-specific markets, and build cultural IP through unforgettable experiences. Based in Dubai, forked worldwide."/>
+        <meta property="og:url" content="https://forkoff.xyz"/>
+        <meta property="og:site_name" content="Fork Off — A Global Culture Studio for Internet-Native Brands"/>
+        <meta property="og:locale" content="en_US"/>
+        <meta property="og:image" content="https://forkoff.xyz/cover2.png"/>
+        <meta property="og:image:alt" content="ForkOff Cover Image"/>
+        <meta property="og:type" content="website"/>
+        <meta name="twitter:card" content="summary_large_image"/>
+        <meta name="twitter:site" content="@officialforkoff"/>
+        <meta name="twitter:title" content="Fork Off — A Global Culture Studio for Internet-Native Brands"/>
+        <meta name="twitter:description" content="We help Web3 brands earn mindshare, retail , crack geo-specific markets, and build cultural IP through unforgettable experiences. Based in Dubai, forked worldwide."/>
+        <meta name="twitter:image" content="https://forkoff.xyz/cover2.png"/>
+        <link rel="icon" href="/favicon.ico"/>
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
+        <script>
+            document.querySelectorAll('body link[rel="icon"], body link[rel="apple-touch-icon"]').forEach(el => document.head.appendChild(el))
+        </script>
+        <script src="/_next/static/chunks/polyfills-42372ed130431b0a.js" noModule=""></script>
+    </head>
+    <body class="__variable_e5b1bd __variable_909442 __variable_87c02c">
+        <div hidden="">
+        <!--$-->
+        <!--/$-->
         </div>
-
-        <!-- Navigation Menu -->
-        <nav class="navigation">
-            <a href="#about" class="nav-link">About</a>
-            <a href="#calendar" class="nav-link">Calendar</a>
-            <a href="#trusted" class="nav-link">Trusted By</a>
-            <a href="#contact" class="nav-link">Reachout</a>
-        </nav>
-
-        <!-- Main Content Area -->
-        <main class="content-area">
-            <section id="about" class="content-section">
-                <h2>About</h2>
-                <p>Green Juice TV is a global culture studio for internet-native brands.</p>
-            </section>
-
-            <section id="calendar" class="content-section">
-                <h2>Calendar</h2>
-                <p>Our upcoming projects and availability.</p>
-            </section>
-
-            <section id="trusted" class="content-section trusted-section">
-                <h2>Trusted By</h2>
-                <div class="trusted-brands">
-                    <!-- Brand logos would go here -->
+        <section class="Toastify" aria-live="polite" aria-atomic="false" aria-relevant="additions text" aria-label="Notifications Alt+T"></section>
+        <div id="page_page-container__HWTDQ">
+            <video src="/bg-vid.mp4" autoPlay="" muted="" playsInline="" loop="" id="page_bgvid__5Secp"></video>
+            <div style="opacity:1;transition:opacity 1350ms" id="page_splash__chcCI">
+                <svg xmlns="http://www.w3.org/2000/svg" width="1274" height="374" fill="none" viewBox="0 0 1274 374">
+                    <path fill="#fff" d="M0 368.806V5.194h146.506v77.917H77.962v64.931h45.522v77.916H77.962v142.848zM253.933 374q-25.115 0-46.044-11.947-20.93-12.467-33.488-32.725-12.034-20.778-12.034-46.231V90.903q0-25.453 12.034-45.711 12.558-20.778 33.488-32.725Q228.819 0 253.933 0q25.116 0 46.045 12.467 20.93 11.947 32.964 32.725Q345.5 65.45 345.5 90.902v192.195q0 25.453-12.558 46.231-12.035 20.258-32.964 32.725Q279.048 374 253.933 374m0-68.567q5.756 0 9.419-3.636 3.662-4.155 3.662-9.35V81.033q0-5.714-3.662-9.35-3.663-4.155-9.419-4.155-5.755 0-9.941 4.155-3.663 3.636-3.663 9.35v211.414q0 5.195 3.663 9.35 4.186 3.636 9.941 3.636M367.145 368.806V5.194H447.2q28.254 0 51.8 14.025 23.547 13.506 37.15 36.881 14.128 22.856 14.128 51.425V168.3q0 13.506-6.802 35.322-6.802 21.297-25.639 38.439v7.792l32.441 118.953h-78.486l-21.976-100.253h-4.709v100.253zm77.962-167.262h4.186q9.418 0 15.697-5.194 6.802-5.713 6.802-28.05v-62.333q0-21.818-6.802-27.53-6.279-5.715-15.697-5.715h-4.186zM566.302 368.806V5.194h77.962v103.889h5.232L670.949 5.194h78.486v10.39l-52.324 147.522v7.791l52.324 187.52v10.389h-78.486l-21.453-112.2h-5.232v112.2zM851.915 374q-25.115 0-46.044-11.947-20.93-12.467-33.488-32.725-12.034-20.778-12.034-46.231V90.903q0-25.453 12.034-45.711 12.558-20.778 33.488-32.725Q826.801 0 851.915 0q25.116 0 46.045 12.467 20.93 11.947 32.964 32.725 12.558 20.258 12.558 45.71v192.195q0 25.453-12.558 46.231-12.034 20.258-32.964 32.725Q877.03 374 851.915 374m0-68.567q5.757 0 9.419-3.636 3.662-4.155 3.662-9.35V81.033q0-5.714-3.662-9.35-3.662-4.155-9.419-4.155-5.755 0-9.941 4.155-3.663 3.636-3.663 9.35v211.414q0 5.195 3.663 9.35 4.186 3.636 9.941 3.636M965.127 368.806V5.194h146.503v77.917h-68.54v64.931h45.52v77.916h-45.52v142.848zM1127.49 368.806V5.194H1274v77.917h-68.54v64.931h45.52v77.916h-45.52v142.848z"></path>
+                </svg>
+                <button id="page_loader-button__afdPr" class="">Loading</button>
+            </div>
+            <main id="page_main__akH3E" style="opacity:0;transition:opacity 1350ms">
+                <div id="page_time-header__rlDAD">
+                    <div class="page_time__gv4z1" id="page_time1__kbmoo">New York: 
+                    <!-- -->
+                    10:12:32 PM</div>
+                    <div class="page_divider__wm_YV"></div>
+                    <div class="page_time__gv4z1" id="page_time2__djfQ4">Dubai: 
+                    <!-- -->
+                    06:12:32 AM</div>
+                    <div class="page_divider__wm_YV"></div>
+                    <div class="page_time__gv4z1" id="page_time3__LPv46">London: 
+                    <!-- -->
+                    03:12:32 AM</div>
                 </div>
-            </section>
-
-            <section id="contact" class="content-section">
-                <h2>Reachout</h2>
-                <p>Get in touch with our team.</p>
-            </section>
-        </main>
-
-        <!-- Bottom Navigation (Mobile/Secondary) -->
-        <nav class="bottom-navigation">
-            <a href="#trusted" class="nav-link">Trusted By</a>
-            <a href="#contact" class="nav-link">Reachout</a>
-        </nav>
-
-        <!-- Footer -->
-        <footer class="footer">
-            <p>© Green Juice TV. All Rights Reserved.</p>
-        </footer>
-    </div>
-
-    <script src="script.js"></script>
-</body>
+                <div id="page_nav-and-quote__4Iuj2">
+                    <nav id="page_nav__r_oUD">
+                        <a href="/about">About</a>
+                        <a href="/calendar">Calendar</a>
+                    </nav>
+                    <div id="page_quote__JtT_v">
+                        <img alt="quote" loading="lazy" width="1040" height="304" decoding="async" data-nimg="1" style="color:transparent" srcSet="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fquote4.ec97f52b.png&amp;w=1080&amp;q=75 1x, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fquote4.ec97f52b.png&amp;w=3840&amp;q=75 2x" src="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fquote4.ec97f52b.png&amp;w=3840&amp;q=75"/>
+                    </div>
+                </div>
+                <div></div>
+                <div id="page_site-logo__3_xka">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1274" height="374" fill="none" viewBox="0 0 1274 374">
+                        <path fill="red" d="M0 368.806V5.194h146.506v77.917H77.962v64.931h45.522v77.916H77.962v142.848zM253.933 374q-25.115 0-46.044-11.947-20.93-12.467-33.488-32.725-12.034-20.778-12.034-46.231V90.903q0-25.453 12.034-45.711 12.558-20.778 33.488-32.725Q228.819 0 253.933 0q25.116 0 46.045 12.467 20.93 11.947 32.964 32.725Q345.5 65.45 345.5 90.902v192.195q0 25.453-12.558 46.231-12.035 20.258-32.964 32.725Q279.048 374 253.933 374m0-68.567q5.756 0 9.419-3.636 3.662-4.155 3.662-9.35V81.033q0-5.714-3.662-9.35-3.663-4.155-9.419-4.155-5.755 0-9.941 4.155-3.663 3.636-3.663 9.35v211.414q0 5.195 3.663 9.35 4.186 3.636 9.941 3.636M367.145 368.806V5.194H447.2q28.254 0 51.8 14.025 23.547 13.506 37.15 36.881 14.128 22.856 14.128 51.425V168.3q0 13.506-6.802 35.322-6.802 21.297-25.639 38.439v7.792l32.441 118.953h-78.486l-21.976-100.253h-4.709v100.253zm77.962-167.262h4.186q9.418 0 15.697-5.194 6.802-5.713 6.802-28.05v-62.333q0-21.818-6.802-27.53-6.279-5.715-15.697-5.715h-4.186zM566.302 368.806V5.194h77.962v103.889h5.232L670.949 5.194h78.486v10.39l-52.324 147.522v7.791l52.324 187.52v10.389h-78.486l-21.453-112.2h-5.232v112.2zM851.915 374q-25.115 0-46.044-11.947-20.93-12.467-33.488-32.725-12.034-20.778-12.034-46.231V90.903q0-25.453 12.034-45.711 12.558-20.778 33.488-32.725Q826.801 0 851.915 0q25.116 0 46.045 12.467 20.93 11.947 32.964 32.725 12.558 20.258 12.558 45.71v192.195q0 25.453-12.558 46.231-12.034 20.258-32.964 32.725Q877.03 374 851.915 374m0-68.567q5.757 0 9.419-3.636 3.662-4.155 3.662-9.35V81.033q0-5.714-3.662-9.35-3.662-4.155-9.419-4.155-5.755 0-9.941 4.155-3.663 3.636-3.663 9.35v211.414q0 5.195 3.663 9.35 4.186 3.636 9.941 3.636M965.127 368.806V5.194h146.503v77.917h-68.54v64.931h45.52v77.916h-45.52v142.848zM1127.49 368.806V5.194H1274v77.917h-68.54v64.931h45.52v77.916h-45.52v142.848z"></path>
+                    </svg>
+                </div>
+                <div id="page_past-brands-and-reachout__0olPu">
+                    <div id="page_past-brands__PKSTv">
+                        <div>Trusted By</div>
+                    </div>
+                    <div id="page_reachout__9PPJh">
+                        <a href="https://t.me/officialforkoff">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#A9CBE6" style="rotate:-90deg">
+                                <g id="_15.Arrow_Down" data-name="15.Arrow Down">
+                                    <path d="M12,24A12,12,0,1,1,24,12,12.013,12.013,0,0,1,12,24ZM12,2A10,10,0,1,0,22,12,10.011,10.011,0,0,0,12,2Z"></path>
+                                    <polygon points="12 18.414 7.293 13.707 8.707 12.293 12 15.586 15.293 12.293 16.707 13.707 12 18.414"></polygon>
+                                    <rect x="11" y="6" width="2" height="11"></rect>
+                                </g>
+                            </svg>
+                            <div>Reachout</div>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#A9CBE6" style="rotate:90deg">
+                                <g id="_15.Arrow_Down" data-name="15.Arrow Down">
+                                    <path d="M12,24A12,12,0,1,1,24,12,12.013,12.013,0,0,1,12,24ZM12,2A10,10,0,1,0,22,12,10.011,10.011,0,0,0,12,2Z"></path>
+                                    <polygon points="12 18.414 7.293 13.707 8.707 12.293 12 15.586 15.293 12.293 16.707 13.707 12 18.414"></polygon>
+                                    <rect x="11" y="6" width="2" height="11"></rect>
+                                </g>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <footer id="page_footer__wa9SD">
+                    <div id="page_footer-links__uChPo">
+                        <a class="page_linkItem__6g9jD" href="https://t.me/officialforkoff">
+                            <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                <line x1="22" y1="2" x2="11" y2="13"></line>
+                                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                            </svg>
+                            <span>officialforkoff</span>
+                        </a>
+                        <a class="page_linkItem__6g9jD" href="https://x.com/officialforkoff">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"></path>
+                            </svg>
+                            <span>officialforkoff</span>
+                        </a>
+                        <a class="page_linkItem__6g9jD" href="mailto:crew@forkoff.xyz">
+                            <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                            <span>crew@forkoff.xyz</span>
+                        </a>
+                    </div>
+                    <div>© Forkoff. All Rights Reserved.</div>
+                </footer>
+            </main>
+            <main id="page_mobile-main__tCu0q" style="opacity:0;transition:opacity 1350ms">
+                <div id="page_nav__r_oUD">
+                    <div id="Navbar_navbar-panel__5DTml">
+                        <div>
+                            <a href="/">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1274" height="374" fill="none" viewBox="0 0 1274 374">
+                                    <path fill="#F51A16" d="M0 368.806V5.194h146.506v77.917H77.962v64.931h45.522v77.916H77.962v142.848zM253.933 374q-25.115 0-46.044-11.947-20.93-12.467-33.488-32.725-12.034-20.778-12.034-46.231V90.903q0-25.453 12.034-45.711 12.558-20.778 33.488-32.725Q228.819 0 253.933 0q25.116 0 46.045 12.467 20.93 11.947 32.964 32.725Q345.5 65.45 345.5 90.902v192.195q0 25.453-12.558 46.231-12.035 20.258-32.964 32.725Q279.048 374 253.933 374m0-68.567q5.756 0 9.419-3.636 3.662-4.155 3.662-9.35V81.033q0-5.714-3.662-9.35-3.663-4.155-9.419-4.155-5.755 0-9.941 4.155-3.663 3.636-3.663 9.35v211.414q0 5.195 3.663 9.35 4.186 3.636 9.941 3.636M367.145 368.806V5.194H447.2q28.254 0 51.8 14.025 23.547 13.506 37.15 36.881 14.128 22.856 14.128 51.425V168.3q0 13.506-6.802 35.322-6.802 21.297-25.639 38.439v7.792l32.441 118.953h-78.486l-21.976-100.253h-4.709v100.253zm77.962-167.262h4.186q9.418 0 15.697-5.194 6.802-5.713 6.802-28.05v-62.333q0-21.818-6.802-27.53-6.279-5.715-15.697-5.715h-4.186zM566.302 368.806V5.194h77.962v103.889h5.232L670.949 5.194h78.486v10.39l-52.324 147.522v7.791l52.324 187.52v10.389h-78.486l-21.453-112.2h-5.232v112.2zM851.915 374q-25.115 0-46.044-11.947-20.93-12.467-33.488-32.725-12.034-20.778-12.034-46.231V90.903q0-25.453 12.034-45.711 12.558-20.778 33.488-32.725Q826.801 0 851.915 0q25.116 0 46.045 12.467 20.93 11.947 32.964 32.725 12.558 20.258 12.558 45.71v192.195q0 25.453-12.558 46.231-12.034 20.258-32.964 32.725Q877.03 374 851.915 374m0-68.567q5.757 0 9.419-3.636 3.662-4.155 3.662-9.35V81.033q0-5.714-3.662-9.35-3.662-4.155-9.419-4.155-5.755 0-9.941 4.155-3.663 3.636-3.663 9.35v211.414q0 5.195 3.663 9.35 4.186 3.636 9.941 3.636M965.127 368.806V5.194h146.503v77.917h-68.54v64.931h45.52v77.916h-45.52v142.848zM1127.49 368.806V5.194H1274v77.917h-68.54v64.931h45.52v77.916h-45.52v142.848z"></path>
+                                </svg>
+                            </a>
+                            <button class="HamburgerButton_button__vZJBC">
+                                <svg width="30" height="30" viewBox="0 0 20 20">
+                                    <line x1="3" y1="5" x2="17" y2="5" stroke="white" stroke-width="2" stroke-linecap="round"></line>
+                                    <line x1="3" y1="10" x2="17" y2="10" stroke="white" stroke-linecap="round" stroke-width="2"></line>
+                                    <line x1="3" y1="15" x2="17" y2="15" stroke="white" stroke-width="2" stroke-linecap="round"></line>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <nav class="Navbar_navbar__W_ouQ"></nav>
+                </div>
+                <div id="page_content__szHtB">
+                    <div id="page_quote__JtT_v">
+                        <img alt="quote" loading="lazy" width="1040" height="304" decoding="async" data-nimg="1" style="color:transparent" srcSet="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fquote4.ec97f52b.png&amp;w=1080&amp;q=75 1x, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fquote4.ec97f52b.png&amp;w=3840&amp;q=75 2x" src="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fquote4.ec97f52b.png&amp;w=3840&amp;q=75"/>
+                    </div>
+                    <div id="page_past-brands__PKSTv">
+                        <div>Trusted By</div>
+                    </div>
+                    <div id="page_reachout__9PPJh">
+                        <a href="https://t.me/officialforkoff">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#A9CBE6" style="rotate:-90deg">
+                                <g id="_15.Arrow_Down" data-name="15.Arrow Down">
+                                    <path d="M12,24A12,12,0,1,1,24,12,12.013,12.013,0,0,1,12,24ZM12,2A10,10,0,1,0,22,12,10.011,10.011,0,0,0,12,2Z"></path>
+                                    <polygon points="12 18.414 7.293 13.707 8.707 12.293 12 15.586 15.293 12.293 16.707 13.707 12 18.414"></polygon>
+                                    <rect x="11" y="6" width="2" height="11"></rect>
+                                </g>
+                            </svg>
+                            <div>Reachout</div>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#A9CBE6" style="rotate:90deg">
+                                <g id="_15.Arrow_Down" data-name="15.Arrow Down">
+                                    <path d="M12,24A12,12,0,1,1,24,12,12.013,12.013,0,0,1,12,24ZM12,2A10,10,0,1,0,22,12,10.011,10.011,0,0,0,12,2Z"></path>
+                                    <polygon points="12 18.414 7.293 13.707 8.707 12.293 12 15.586 15.293 12.293 16.707 13.707 12 18.414"></polygon>
+                                    <rect x="11" y="6" width="2" height="11"></rect>
+                                </g>
+                            </svg>
+                        </a>
+                    </div>
+                    <div id="page_footer__wa9SD">© Forkoff. All Rights Reserved.</div>
+                </div>
+            </main>
+        </div>
+        <!--$-->
+        <!--/$-->
+        <script src="/_next/static/chunks/webpack-adc7a06680af252a.js" async=""></script>
+        <script>
+            (self.__next_f = self.__next_f || []).push([0])
+        </script>
+        <script>
+            self.__next_f.push([1, "1:\"$Sreact.fragment\"\n2:I[7211,[\"799\",\"static/chunks/799-1e1e6c73fb2f259d.js\",\"177\",\"static/chunks/app/layout-956eba540a3db1f4.js\"],\"default\"]\n3:I[5799,[\"799\",\"static/chunks/799-1e1e6c73fb2f259d.js\",\"177\",\"static/chunks/app/layout-956eba540a3db1f4.js\"],\"ToastContainer\"]\n4:I[7555,[],\"\"]\n5:I[1295,[],\"\"]\n6:I[894,[],\"ClientPageRoot\"]\n7:I[8609,[\"446\",\"static/chunks/53c13509-48ecd9d0106e1ac5.js\",\"844\",\"static/chunks/ee560e2c-0c91b6c77fc1cda8.js\",\"992\",\"static/chunks/992-0f3d050cfe4f1eef.js\",\"583\",\"static/chunks/583-7c202f764f5e2223.js\",\"799\",\"static/chunks/799-1e1e6c73fb2f259d.js\",\"313\",\"static/chunks/313-ce3ca5c7b3571c52.js\",\"974\",\"static/chunks/app/page-5a3cbde735273467.js\"],\"default\"]\na:I[9665,[],\"OutletBoundary\"]\nd:I[4911,[],\"AsyncMetadataOutlet\"]\nf:I[9665,[],\"ViewportBoundary\"]\n11:I[9665,[],\"MetadataBoundary\"]\n13:I[6614,[],\"\"]\n:HL[\"/_next/static/media/111c93f1bc244164-s.p.woff2\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\n:HL[\"/_next/static/media/54d279905dfc6637-s.p.woff2\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\n:HL[\"/_next/static/media/828e2958d60bafae-s.p.woff2\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\n:HL[\"/_next/static/media/86a4519c88efbac0-s.p.woff2\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\n:HL[\"/_next/static/css/bf7763f2a5c67a5f.css\",\"style\"]\n:HL[\"/_next/static/css/943b0df47baf6dc4.css\",\"style\"]\n"])
+        </script>
+        <script>
+            self.__next_f.push([1, "0:{\"P\":null,\"b\":\"gSBh-n3kmtlzMoJ2PB3Yw\",\"p\":\"\",\"c\":[\"\",\"\"],\"i\":false,\"f\":[[[\"\",{\"children\":[\"__PAGE__\",{}]},\"$undefined\",\"$undefined\",true],[\"\",[\"$\",\"$1\",\"c\",{\"children\":[[[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/css/bf7763f2a5c67a5f.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\",\"nonce\":\"$undefined\"}]],[\"$\",\"html\",null,{\"lang\":\"en\",\"children\":[\"$\",\"body\",null,{\"className\":\"__variable_e5b1bd __variable_909442 __variable_87c02c\",\"children\":[[\"$\",\"$L2\",null,{}],[\"$\",\"$L3\",null,{\"position\":\"top-right\",\"autoClose\":3000,\"theme\":\"dark\"}],[\"$\",\"$L4\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L5\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":[[[\"$\",\"title\",null,{\"children\":\"404: This page could not be found.\"}],[\"$\",\"div\",null,{\"style\":{\"fontFamily\":\"system-ui,\\\"Segoe UI\\\",Roboto,Helvetica,Arial,sans-serif,\\\"Apple Color Emoji\\\",\\\"Segoe UI Emoji\\\"\",\"height\":\"100vh\",\"textAlign\":\"center\",\"display\":\"flex\",\"flexDirection\":\"column\",\"alignItems\":\"center\",\"justifyContent\":\"center\"},\"children\":[\"$\",\"div\",null,{\"children\":[[\"$\",\"style\",null,{\"dangerouslySetInnerHTML\":{\"__html\":\"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}\"}}],[\"$\",\"h1\",null,{\"className\":\"next-error-h1\",\"style\":{\"display\":\"inline-block\",\"margin\":\"0 20px 0 0\",\"padding\":\"0 23px 0 0\",\"fontSize\":24,\"fontWeight\":500,\"verticalAlign\":\"top\",\"lineHeight\":\"49px\"},\"children\":404}],[\"$\",\"div\",null,{\"style\":{\"display\":\"inline-block\"},\"children\":[\"$\",\"h2\",null,{\"style\":{\"fontSize\":14,\"fontWeight\":400,\"lineHeight\":\"49px\",\"margin\":0},\"children\":\"This page could not be found.\"}]}]]}]}]],[]],\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]]}]}]]}],{\"children\":[\"__PAGE__\",[\"$\",\"$1\",\"c\",{\"children\":[[\"$\",\"$L6\",null,{\"Component\":\"$7\",\"searchParams\":{},\"params\":{},\"promises\":[\"$@8\",\"$@9\"]}],[[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/css/943b0df47baf6dc4.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\",\"nonce\":\"$undefined\"}]],[\"$\",\"$La\",null,{\"children\":[\"$Lb\",\"$Lc\",[\"$\",\"$Ld\",null,{\"promise\":\"$@e\"}]]}]]}],{},null,false]},null,false],[\"$\",\"$1\",\"h\",{\"children\":[null,[\"$\",\"$1\",\"Uvqq-B2HqAn1ka0V_g-thv\",{\"children\":[[\"$\",\"$Lf\",null,{\"children\":\"$L10\"}],[\"$\",\"meta\",null,{\"name\":\"next-size-adjust\",\"content\":\"\"}]]}],[\"$\",\"$L11\",null,{\"children\":\"$L12\"}]]}],false]],\"m\":\"$undefined\",\"G\":[\"$13\",\"$undefined\"],\"s\":false,\"S\":true}\n"])
+        </script>
+        <script>
+            self.__next_f.push([1, "14:\"$Sreact.suspense\"\n15:I[4911,[],\"AsyncMetadata\"]\n8:{}\n9:{}\n12:[\"$\",\"div\",null,{\"hidden\":true,\"children\":[\"$\",\"$14\",null,{\"fallback\":null,\"children\":[\"$\",\"$L15\",null,{\"promise\":\"$@16\"}]}]}]\n"])
+        </script>
+        <script>
+            self.__next_f.push([1, "c:null\n"])
+        </script>
+        <script>
+            self.__next_f.push([1, "10:[[\"$\",\"meta\",\"0\",{\"charSet\":\"utf-8\"}],[\"$\",\"meta\",\"1\",{\"name\":\"viewport\",\"content\":\"width=device-width, initial-scale=1\"}]]\nb:null\n"])
+        </script>
+        <script>
+            self.__next_f.push([1, "e:{\"metadata\":[[\"$\",\"title\",\"0\",{\"children\":\"Fork Off — A Global Culture Studio for Internet-Native Brands\"}],[\"$\",\"meta\",\"1\",{\"name\":\"description\",\"content\":\"We help Web3 brands earn mindshare, retail , crack geo-specific markets, and build cultural IP through unforgettable experiences. Based in Dubai, forked worldwide.\"}],[\"$\",\"meta\",\"2\",{\"name\":\"keywords\",\"content\":\"Web3 marketing,Culture studio,Crypto PR,KOL campaigns,Guerrilla marketing,Brand strategy,Event production,Retail marketing,Web3 cultural marketing,Dubai Web3 agency,Crypto influencer campaigns,Geo-specific GTM Web3,IRL Web3 experiences,Web3 culture-led marketing studio,Guerrilla marketing for crypto brands,KOL-driven narrative campaigns for Web3,Web3 GTM strategy for exchanges,Launch crypto brand in Asia,Fork Off Web3,Fork Off agency,Unpaid Founder agency,Fork Off culture studio,Hire crypto marketing agency,How to launch a crypto brand globally,Book Web3 event agency,What is a Web3 culture studio?,Crypto marketing agency Dubai,Web3 GTM Japan,Crypto branding in Korea,LATAM Web3 agency\"}],[\"$\",\"meta\",\"3\",{\"name\":\"robots\",\"content\":\"index, follow\"}],[\"$\",\"meta\",\"4\",{\"name\":\"googlebot\",\"content\":\"index, follow\"}],[\"$\",\"meta\",\"5\",{\"property\":\"og:title\",\"content\":\"Fork Off — A Global Culture Studio for Internet-Native Brands\"}],[\"$\",\"meta\",\"6\",{\"property\":\"og:description\",\"content\":\"We help Web3 brands earn mindshare, retail , crack geo-specific markets, and build cultural IP through unforgettable experiences. Based in Dubai, forked worldwide.\"}],[\"$\",\"meta\",\"7\",{\"property\":\"og:url\",\"content\":\"https://forkoff.xyz\"}],[\"$\",\"meta\",\"8\",{\"property\":\"og:site_name\",\"content\":\"Fork Off — A Global Culture Studio for Internet-Native Brands\"}],[\"$\",\"meta\",\"9\",{\"property\":\"og:locale\",\"content\":\"en_US\"}],[\"$\",\"meta\",\"10\",{\"property\":\"og:image\",\"content\":\"https://forkoff.xyz/cover2.png\"}],[\"$\",\"meta\",\"11\",{\"property\":\"og:image:alt\",\"content\":\"ForkOff Cover Image\"}],[\"$\",\"meta\",\"12\",{\"property\":\"og:type\",\"content\":\"website\"}],[\"$\",\"meta\",\"13\",{\"name\":\"twitter:card\",\"content\":\"summary_large_image\"}],[\"$\",\"meta\",\"14\",{\"name\":\"twitter:site\",\"content\":\"@officialforkoff\"}],[\"$\",\"meta\",\"15\",{\"name\":\"twitter:title\",\"content\":\"Fork Off — A Global Culture Studio for Internet-Native Brands\"}],[\"$\",\"meta\",\"16\",{\"name\":\"twitter:description\",\"content\":\"We help Web3 brands earn mindshare, retail , crack geo-specific markets, and build cultural IP through unforgettable experiences. Based in Dubai, forked worldwide.\"}],[\"$\",\"meta\",\"17\",{\"name\":\"twitter:image\",\"content\":\"https://forkoff.xyz/cover2.png\"}],[\"$\",\"link\",\"18\",{\"rel\":\"icon\",\"href\":\"/favicon.ico\"}],[\"$\",\"link\",\"19\",{\"rel\":\"apple-touch-icon\",\"href\":\"/apple-touch-icon.png\"}]],\"error\":null,\"digest\":\"$undefined\"}\n"])
+        </script>
+        <script>
+            self.__next_f.push([1, "16:{\"metadata\":\"$e:metadata\",\"error\":null,\"digest\":\"$undefined\"}\n"])
+        </script>
+    </body>
 </html>
